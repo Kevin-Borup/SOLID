@@ -1,0 +1,15 @@
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\bin\Debug\net6.0\ConsoleApp_AnimalClasses.exe
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\bin\Debug\net6.0\ConsoleApp_AnimalClasses.deps.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\bin\Debug\net6.0\ConsoleApp_AnimalClasses.runtimeconfig.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\bin\Debug\net6.0\ConsoleApp_AnimalClasses.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\bin\Debug\net6.0\ConsoleApp_AnimalClasses.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.AssemblyInfoInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.AssemblyInfo.cs
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\refint\ConsoleApp_AnimalClasses.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ConsoleApp_AnimalClasses.genruntimeconfig.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_AnimalClasses\obj\Debug\net6.0\ref\ConsoleApp_AnimalClasses.dll

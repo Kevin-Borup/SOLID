@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="star = protected&#xD;&#xA;lock = private&#xD;&#xA;nothing = public">
+    <Position X="6.15" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="ConsoleApp_AnimalClasses.Animal">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAEIAAAAAAAAAAgAIAAAABAAAgAAAAAAEAAAA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp_AnimalClasses.Elephant">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Elephant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp_AnimalClasses.Goat">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Goat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp_AnimalClasses.Spider">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Spider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp_AnimalClasses.Squid">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAACA=</HashCode>
+      <FileName>Squid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp_AnimalClasses.Hammerhead">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAIAAAIAAABAAAAAAAAA=</HashCode>
+      <FileName>Hammerhead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp_AnimalClasses.Crab">
+    <Position X="13.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAABAACAAAABAAAAAAAA=</HashCode>
+      <FileName>Crab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

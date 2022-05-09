@@ -1,0 +1,15 @@
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\bin\Debug\net6.0\ConsoleApp_Geometry.exe
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\bin\Debug\net6.0\ConsoleApp_Geometry.deps.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\bin\Debug\net6.0\ConsoleApp_Geometry.runtimeconfig.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\bin\Debug\net6.0\ConsoleApp_Geometry.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\bin\Debug\net6.0\ConsoleApp_Geometry.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.GeneratedMSBuildEditorConfig.editorconfig
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.AssemblyInfoInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.AssemblyInfo.cs
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\refint\ConsoleApp_Geometry.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ConsoleApp_Geometry.genruntimeconfig.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_Geometry\obj\Debug\net6.0\ref\ConsoleApp_Geometry.dll
