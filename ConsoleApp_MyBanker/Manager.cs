@@ -22,6 +22,8 @@ namespace ConsoleApp_MyBanker
 
             Account account1 = new Account(person1, accountNr);
 
+            account1.AddCard("Mastercard");
+
 
         }
     }

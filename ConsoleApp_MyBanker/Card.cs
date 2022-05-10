@@ -9,14 +9,15 @@ namespace ConsoleApp_MyBanker
     internal abstract class Card
     {
         private string name;
-        private string cardNr;
+        private string number;
         private string accountNr;
+        protected string[] prefixes;
+        protected int cardNumLength;
 
-        public Card(string name, string card, string account)
+        public Card(string name, string accountNr)
         {
             this.name = name;
-            cardNr = card;
-            accountNr = account;
+            this.accountNr = accountNr;
         }
 
         public virtual void WithdrawAmount(double amount)
@@ -26,7 +27,16 @@ namespace ConsoleApp_MyBanker
 
         protected void GenerateCardNr()
         {
+            Random random = new Random();
 
+            string selectedPrefix = prefixes[random.Next(prefixes.Length)];
+
+            number = selectedPrefix;
+
+            for (int i = 0; i < cardNumLength - number.Length; i++)
+            {
+                number += random.Next(0, 10).ToString();
+            }
         }
     }
 }

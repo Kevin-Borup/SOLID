@@ -8,36 +8,47 @@ namespace ConsoleApp_MyBanker
 {
     internal class Account
     {
-        private Person owner;
-        private string accountNr;
-        private List<Card> accounts = new List<Card>();
+        public Person Owner { get; private set; }
+        public string Number { get; private set; }
+        public double Balance { get; private set; }
+        private List<Card> cards = new List<Card>();
         public Account(Person owner, string accountNr)
         {
-            this.owner = owner;
-            this.accountNr = accountNr;
+            Owner = owner;
+            Number = accountNr;
         }
 
-        public void AddCard(Card newCard)
+        public void AddCard(string cardType)
         {
-            if (newCard is CashCard)
+            switch (cardType)
             {
-                accounts.Add((CashCard)newCard);
-            }
-            else if (newCard is Maestro)
-            {
-                accounts.Add((Maestro)newCard);
-            }
-            else if (newCard is VisaElectron)
-            {
-                accounts.Add((VisaElectron)newCard);
-            }
-            else if (newCard is VisaDankort)
-            {
-                accounts.Add((VisaDankort)newCard);
-            }
-            else if (newCard is Mastercard)
-            {
-                accounts.Add((Mastercard)newCard);
+                case "CashCard":
+                    cards.Add(new CashCard(Owner.Name, Number));
+                    break;
+                case "Maestro":
+                    Maestro newMaestro = new Maestro(Owner.Name, Number);
+                    if (newMaestro.MinAge >= Owner.Age)
+                    {
+                        cards.Add(newMaestro);
+                    }
+                    break;
+                case "VisaElectron":
+                    VisaElectron newElectron = new VisaElectron(Owner.Name, Number);
+                    if (newElectron.MinAge >= Owner.Age)
+                    {
+                        cards.Add(newElectron);
+                    }
+                    break;
+                case "VisaDankort":
+                    VisaDankort newDankort = new VisaDankort(Owner.Name, Number);
+                    if (newDankort.MinAge >= Owner.Age)
+                    {
+                        cards.Add(newDankort);
+                    }
+                    break;
+                case "Mastercard":
+                    cards.Add(new Mastercard(Owner.Name, Number));
+                    break;
             }
         }
     }

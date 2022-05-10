@@ -8,5 +8,11 @@ namespace ConsoleApp_MyBanker
 {
     internal class CashCard : Card
     {
+        public CashCard(string name, string accountNr) : base(name, accountNr)
+        {
+            prefixes = new string[1] { "2400" };
+            cardNumLength = 16;
+            GenerateCardNr();
+        }
     }
 }
