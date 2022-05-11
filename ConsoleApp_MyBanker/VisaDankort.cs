@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,38 +10,49 @@ namespace ConsoleApp_MyBanker
 {
     internal class VisaDankort : Card, ICreditNWithdrawable, IAgeRequirable, IExpirable
     {
-        public DateTime expirationDate { get; set; }
-        public DateTime validLength { get; set; }
-        public int monthlyCreditLimit { get; set; }
-        public int monthlyWithdrawalLimit { get; set; }
+        public DateTime ExpirationDate { get; set; }
+        public DateTime ValidLength { get; set; }
+        public int MonthlyCreditLimit { get; set; }
+        public int MonthlyWithdrawalLimit { get; set; }
         public int MinAge { get; set; }
 
         public VisaDankort(string name, string accountNr) : base(name, accountNr)
         {
             MinAge = 18;
-            monthlyCreditLimit = 20000;
-            monthlyWithdrawalLimit = 25000;
+            MonthlyCreditLimit = 20000;
+            MonthlyWithdrawalLimit = 25000;
 
             prefixes = new string[1] { "4" };
             cardNumLength = 16;
             GenerateCardNr();
 
-            validLength = DateTime.Parse("00/00/0005");
+            ValidLength = DateTime.ParseExact("0005", "yyyy", CultureInfo.InvariantCulture);
             GenerateExpirationDate();
         }
 
         public void GenerateExpirationDate()
         {
-            DateTime currentDate = DateTime.Now;
+            ExpirationDate = DateTime.Now.AddYears(ValidLength.Year);
+        }
 
-            currentDate.AddYears(validLength.Year);
+        public void Purchase(double amount)
+        {
 
-            expirationDate = currentDate;
         }
 
         public override void WithdrawAmount(double amount)
         {
             base.WithdrawAmount(amount);
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                   $"Expiration Date: {ExpirationDate.Date.ToShortDateString()}\n" +
+                   $"Valid Length: {ValidLength.Year} years\n" +
+                   $"Minimum Age: {MinAge}\n" +
+                   $"Monthly Credit Limit: {MonthlyCreditLimit},- kr\n" +
+                   $"Max Monthly Withdrawal: {MonthlyWithdrawalLimit},- kr\n";
         }
 
     }

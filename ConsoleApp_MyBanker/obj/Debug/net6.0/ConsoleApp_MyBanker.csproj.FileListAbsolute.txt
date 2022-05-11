@@ -1,0 +1,15 @@
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\bin\Debug\net6.0\ConsoleApp_MyBanker.exe
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\bin\Debug\net6.0\ConsoleApp_MyBanker.deps.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\bin\Debug\net6.0\ConsoleApp_MyBanker.runtimeconfig.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\bin\Debug\net6.0\ConsoleApp_MyBanker.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\bin\Debug\net6.0\ConsoleApp_MyBanker.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.GeneratedMSBuildEditorConfig.editorconfig
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.AssemblyInfoInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.AssemblyInfo.cs
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\refint\ConsoleApp_MyBanker.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ConsoleApp_MyBanker.genruntimeconfig.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_MyBanker\obj\Debug\net6.0\ref\ConsoleApp_MyBanker.dll

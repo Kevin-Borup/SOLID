@@ -11,11 +11,13 @@ namespace ConsoleApp_MyBanker
         public Person Owner { get; private set; }
         public string Number { get; private set; }
         public double Balance { get; private set; }
-        private List<Card> cards = new List<Card>();
+        public List<Card> Cards { get; private set; }
         public Account(Person owner, string accountNr)
         {
             Owner = owner;
             Number = accountNr;
+
+            Cards = new List<Card>();
         }
 
         public void AddCard(string cardType)
@@ -23,31 +25,31 @@ namespace ConsoleApp_MyBanker
             switch (cardType)
             {
                 case "CashCard":
-                    cards.Add(new CashCard(Owner.Name, Number));
+                    Cards.Add(new CashCard(Owner.Name, Number));
                     break;
                 case "Maestro":
                     Maestro newMaestro = new Maestro(Owner.Name, Number);
-                    if (newMaestro.MinAge >= Owner.Age)
+                    if (newMaestro.MinAge <= Owner.Age)
                     {
-                        cards.Add(newMaestro);
+                        Cards.Add(newMaestro);
                     }
                     break;
                 case "VisaElectron":
                     VisaElectron newElectron = new VisaElectron(Owner.Name, Number);
-                    if (newElectron.MinAge >= Owner.Age)
+                    if (newElectron.MinAge <= Owner.Age)
                     {
-                        cards.Add(newElectron);
+                        Cards.Add(newElectron);
                     }
                     break;
                 case "VisaDankort":
                     VisaDankort newDankort = new VisaDankort(Owner.Name, Number);
-                    if (newDankort.MinAge >= Owner.Age)
+                    if (newDankort.MinAge <= Owner.Age)
                     {
-                        cards.Add(newDankort);
+                        Cards.Add(newDankort);
                     }
                     break;
                 case "Mastercard":
-                    cards.Add(new Mastercard(Owner.Name, Number));
+                    Cards.Add(new Mastercard(Owner.Name, Number));
                     break;
             }
         }

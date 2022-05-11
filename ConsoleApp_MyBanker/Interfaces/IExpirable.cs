@@ -8,9 +8,9 @@ namespace ConsoleApp_MyBanker.Interfaces
 {
     interface IExpirable
     {
-        DateTime expirationDate { get; set; }
+        DateTime ExpirationDate { get; set; }
 
-        DateTime validLength { get; set; }
+        DateTime ValidLength { get; set; }
 
         void GenerateExpirationDate();
     }

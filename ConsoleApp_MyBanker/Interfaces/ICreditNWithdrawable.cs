@@ -8,7 +8,7 @@ namespace ConsoleApp_MyBanker.Interfaces
 {
     internal interface ICreditNWithdrawable
     {
-        int monthlyCreditLimit { get; set; }
-        int monthlyWithdrawalLimit { get; set; }
+        int MonthlyCreditLimit { get; set; }
+        int MonthlyWithdrawalLimit { get; set; }
     }
 }

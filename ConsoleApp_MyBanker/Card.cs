@@ -33,10 +33,18 @@ namespace ConsoleApp_MyBanker
 
             number = selectedPrefix;
 
-            for (int i = 0; i < cardNumLength - number.Length; i++)
+            while (number.Length < cardNumLength)
             {
                 number += random.Next(0, 10).ToString();
             }
+        }
+
+        public override string ToString()
+        {
+            return $"{this.GetType().Name}\n" +
+                   $"Name: {name}\n" +
+                   $"Card Number: {number}\n" +
+                   $"Account Number: {accountNr}\n";
         }
     }
 }

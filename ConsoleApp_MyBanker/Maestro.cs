@@ -1,6 +1,7 @@
 ﻿using ConsoleApp_MyBanker.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,8 +10,8 @@ namespace ConsoleApp_MyBanker
 {
     internal class Maestro : Card, IWebNInternationable, IAgeRequirable, IExpirable
     {
-        public DateTime expirationDate { get; set; }
-        public DateTime validLength { get; set; }
+        public DateTime ExpirationDate { get; set; }
+        public DateTime ValidLength { get; set; }
         public int MinAge { get; set; }
 
         public Maestro(string name, string accountNr) : base(name, accountNr)
@@ -21,18 +22,13 @@ namespace ConsoleApp_MyBanker
             cardNumLength = 19;
             GenerateCardNr();
 
-            validLength = DateTime.Parse("00/08/0005");
+            ValidLength = DateTime.ParseExact("08/0005", "MM/yyyy", CultureInfo.InvariantCulture);
             GenerateExpirationDate();
         }
 
         public void GenerateExpirationDate()
         {
-            DateTime currentDate = DateTime.Now;
-
-            currentDate.AddYears(validLength.Year);
-            currentDate.AddMonths(validLength.Month);
-
-            expirationDate = currentDate;
+            ExpirationDate = DateTime.Now.AddYears(ValidLength.Year).AddMonths(ValidLength.Month);
         }
 
         public void OnlinePurchase(double amount)
@@ -43,6 +39,14 @@ namespace ConsoleApp_MyBanker
         public void InternationalPurchase(double amount)
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                   $"Expiration Date: {ExpirationDate.Date.ToShortDateString()}\n" +
+                   $"Valid Length: {ValidLength.Year} years & {ValidLength.Month} months\n" +
+                   $"Minimum Age: {MinAge}\n";
         }
     }
 }
