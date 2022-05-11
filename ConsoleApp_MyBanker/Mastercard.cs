@@ -11,8 +11,8 @@ namespace ConsoleApp_MyBanker
     internal class Mastercard : Card, IExpirable, ICreditNWithdrawable
     {
 
-        public DateTime ExpirationDate { get; set; }
-        public DateTime ValidLength { get; set; }
+        private DateTime expirationDate;
+        private DateTime validLength;
         public int MaxDailyWithdrawal { get; private set; }
         public int MonthlyCreditLimit { get; set; }
         public int MonthlyWithdrawalLimit { get; set; }
@@ -27,13 +27,13 @@ namespace ConsoleApp_MyBanker
             cardNumLength = 16;
             GenerateCardNr();
 
-            ValidLength = DateTime.ParseExact("0005", "yyyy", CultureInfo.InvariantCulture);
+            validLength = DateTime.ParseExact("0005", "yyyy", CultureInfo.InvariantCulture);
             GenerateExpirationDate();
         }
 
         public void GenerateExpirationDate()
         {
-            ExpirationDate = DateTime.Now.AddYears(ValidLength.Year);
+            expirationDate = DateTime.Now.AddYears(validLength.Year);
         }
 
         public override void WithdrawAmount(double amount)
@@ -49,8 +49,8 @@ namespace ConsoleApp_MyBanker
         public override string ToString()
         {
             return base.ToString() +
-                   $"Expiration Date: {ExpirationDate.Date.ToShortDateString()}\n" +
-                   $"Valid Length: {ValidLength.Year} years\n" +
+                   $"Expiration Date: {expirationDate.Date.ToShortDateString()}\n" +
+                   $"Valid Length: {validLength.Year} years\n" +
                    $"Monthly Credit Limit: {MonthlyCreditLimit},- kr\n" +
                    $"Max Daily Withdrawal: {MaxDailyWithdrawal},- kr\n" +
                    $"Max Monthly Withdrawal: {MonthlyWithdrawalLimit},- kr\n";

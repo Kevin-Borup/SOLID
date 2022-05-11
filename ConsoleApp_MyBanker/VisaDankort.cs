@@ -10,8 +10,8 @@ namespace ConsoleApp_MyBanker
 {
     internal class VisaDankort : Card, ICreditNWithdrawable, IAgeRequirable, IExpirable
     {
-        public DateTime ExpirationDate { get; set; }
-        public DateTime ValidLength { get; set; }
+        private DateTime expirationDate;
+        private DateTime validLength;
         public int MonthlyCreditLimit { get; set; }
         public int MonthlyWithdrawalLimit { get; set; }
         public int MinAge { get; set; }
@@ -26,13 +26,13 @@ namespace ConsoleApp_MyBanker
             cardNumLength = 16;
             GenerateCardNr();
 
-            ValidLength = DateTime.ParseExact("0005", "yyyy", CultureInfo.InvariantCulture);
+            validLength = DateTime.ParseExact("0005", "yyyy", CultureInfo.InvariantCulture);
             GenerateExpirationDate();
         }
 
         public void GenerateExpirationDate()
         {
-            ExpirationDate = DateTime.Now.AddYears(ValidLength.Year);
+            expirationDate = DateTime.Now.AddYears(validLength.Year);
         }
 
         public void Purchase(double amount)
@@ -48,8 +48,8 @@ namespace ConsoleApp_MyBanker
         public override string ToString()
         {
             return base.ToString() +
-                   $"Expiration Date: {ExpirationDate.Date.ToShortDateString()}\n" +
-                   $"Valid Length: {ValidLength.Year} years\n" +
+                   $"Expiration Date: {expirationDate.Date.ToShortDateString()}\n" +
+                   $"Valid Length: {validLength.Year} years\n" +
                    $"Minimum Age: {MinAge}\n" +
                    $"Monthly Credit Limit: {MonthlyCreditLimit},- kr\n" +
                    $"Max Monthly Withdrawal: {MonthlyWithdrawalLimit},- kr\n";
