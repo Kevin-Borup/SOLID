@@ -1,0 +1,15 @@
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\bin\Debug\net6.0\ConsoleApp_CoffeeMachine.exe
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\bin\Debug\net6.0\ConsoleApp_CoffeeMachine.deps.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\bin\Debug\net6.0\ConsoleApp_CoffeeMachine.runtimeconfig.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\bin\Debug\net6.0\ConsoleApp_CoffeeMachine.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\bin\Debug\net6.0\ConsoleApp_CoffeeMachine.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.GeneratedMSBuildEditorConfig.editorconfig
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.AssemblyInfoInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.AssemblyInfo.cs
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\refint\ConsoleApp_CoffeeMachine.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ConsoleApp_CoffeeMachine.genruntimeconfig.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_CoffeeMachine\obj\Debug\net6.0\ref\ConsoleApp_CoffeeMachine.dll
