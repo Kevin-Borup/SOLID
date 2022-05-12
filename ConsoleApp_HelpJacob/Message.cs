@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_HelpJacob
 {
+    /// <summary>
+    /// This class is the message template for creating messages.
+    /// </summary>
     internal class Message
     {
         string to, from, body, subject, cc;

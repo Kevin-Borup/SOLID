@@ -6,46 +6,38 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_HelpJacob
 {
+    /// <summary>
+    /// This Class takes care of sending messages.
+    /// </summary>
     internal class MessageSender
     {
-        public void SendMessage(MessageMethod.MessageCarrier type, Message m, bool isHTML)
+        public void SendMessage(MessageMethod.MessageCarrier type, Message m)
         {
             //herinde sendes der en email ud til modtageren
             if (type.Equals(MessageMethod.MessageCarrier.Smtp))
             {
-                if (isHTML)
-                    m.Body = ConvertBodyToHTML(m.Body);
                 //her implementeres alt koden til at sende via Smtp
             }
 
             if (type.Equals(MessageMethod.MessageCarrier.VMessage))
             {
-                if (isHTML)
-                    m.Body = ConvertBodyToHTML(m.Body);
                 //her implementeres alt koden til at sende via VMessage
             }
         }
         
-        public void SendMessageToAll(MessageMethod.MessageCarrier type, string[] to, Message m, bool isHTML)
+        public void SendMessageToAll(MessageMethod.MessageCarrier type, string[] to, Message m)
         {
             if (type.Equals(MessageMethod.MessageCarrier.Smtp))
             {
-                if (isHTML)
-                    m.Body = ConvertBodyToHTML(m.Body);
                 //her implementeres alt koden til at sende via Smtp
             }
 
             if (type.Equals(MessageMethod.MessageCarrier.VMessage))
             {
-                if (isHTML)
-                    m.Body = ConvertBodyToHTML(m.Body);
                 //her implementeres alt koden til at sende via VMessage
             }
         }
 
-        private string ConvertBodyToHTML(string plainText)
-        {
-            return "" + plainText + "";
-        }
+        
     }
 }

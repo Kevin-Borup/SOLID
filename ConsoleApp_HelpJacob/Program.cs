@@ -12,6 +12,7 @@ namespace thisNamespace
         public static void Main(string[] args)
         {
             MessageSender sender = new MessageSender();
+            HTMLHandler handler = new HTMLHandler();
 
             string to = "";
             string[] toAll = new string[2] { "", "" };
@@ -22,8 +23,13 @@ namespace thisNamespace
 
             Message message = new Message(to, from , body, subject, cc);
 
-            sender.SendMessage(MessageMethod.MessageCarrier.VMessage, message, true);
-            sender.SendMessageToAll(MessageMethod.MessageCarrier.VMessage, toAll, message, true);
+            sender.SendMessage(MessageMethod.MessageCarrier.VMessage, message);
+            sender.SendMessageToAll(MessageMethod.MessageCarrier.Smtp, toAll, message);
+
+            message = handler.ApplyHTMLBody(message, handler.ConvertBodyToHTML(message.Body));
+
+            sender.SendMessage(MessageMethod.MessageCarrier.VMessage, message);
+            sender.SendMessageToAll(MessageMethod.MessageCarrier.Smtp, toAll, message);
         }
     }
 
