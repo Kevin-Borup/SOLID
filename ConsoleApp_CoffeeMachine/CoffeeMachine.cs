@@ -13,15 +13,18 @@ namespace ConsoleApp_CoffeeMachine
     {
         private double waterContainer = 0;
         private bool insertedFilter = false;
-        private double coffeeGrams = 0;
+
+        private Powder powder;
 
         private double cupMl = 200;
-        private int optimalCoffeeGrams = 16;
+        private double optimalCoffeeGrams = 16;
+        private double optimalTeaGrams = 12;
 
-        public void Input(double waterMl, double coffeeGrams)
+
+        public void Input(double waterMl, Powder powder)
         {
             waterContainer += waterMl;
-            this.coffeeGrams = coffeeGrams;
+            this.powder = powder;
         }
 
         public void InsertFilter()
@@ -29,14 +32,31 @@ namespace ConsoleApp_CoffeeMachine
             insertedFilter = true;
         }
 
+        public void RemoveFilter()
+        {
+            insertedFilter = false;
+        }
+
         public int[] Output()
         {
             if (on && running && insertedFilter)
             {
                 int cups = (int)(waterContainer / cupMl);
+                double gramsPerCup = powder.Grams / cups;
 
-                int gramsPerCup = (int)coffeeGrams / cups;
-                int percentageStrength = (optimalCoffeeGrams / gramsPerCup) * 100;
+                int percentageStrength = 0;
+
+                if (powder.Type.Equals("Coffee"))
+                {
+                    percentageStrength = Convert.ToInt32((optimalCoffeeGrams / gramsPerCup) * 100);
+                }
+                else if (powder.Type.Equals("Tea"))
+                {
+                    percentageStrength = Convert.ToInt32((optimalTeaGrams / gramsPerCup) * 100);
+                }
+
+                waterContainer -= cups * cupMl;
+                
 
                 return new int[2] { cups, percentageStrength };
             }

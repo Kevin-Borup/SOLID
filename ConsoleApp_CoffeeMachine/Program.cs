@@ -6,14 +6,23 @@
         {
             CoffeeMachine coffeeMachine = new CoffeeMachine();
 
+            List<Powder> powders = new List<Powder> { new Powder(50, "Coffee"), new Powder(60, "Tea") };
+
             coffeeMachine.PowerOn();
-            coffeeMachine.InsertFilter();
-            coffeeMachine.Input(650, 50);
-            coffeeMachine.Activate();
+            foreach (Powder powder in powders)
+            {
+                coffeeMachine.InsertFilter();
+                coffeeMachine.Input(650, powder);
+                coffeeMachine.Activate();
+                Print(coffeeMachine.Output(), powder);
+                coffeeMachine.Deactivate();
+                coffeeMachine.RemoveFilter();
+            }
+        }
 
-            int[] output = coffeeMachine.Output();
-
-            Console.WriteLine("Cups: " + output[0] + " - Cup Strength: " + output[1] + "%" );
+        private static void Print(int[] output, Powder powder)
+        {
+            Console.WriteLine($"Cups: {output[0]} of {powder.Type} - Cup Strength: {output[1]}%");
         }
     }
 }
