@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_WebRequest
 {
-    internal interface IWebGet
+    internal interface IGetable
     {
-        public string GetWebReply(string website);
+        public string GetData(string context);
     }
 }

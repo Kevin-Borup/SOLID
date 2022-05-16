@@ -8,16 +8,16 @@ namespace ConsoleApp_WebRequest
 {
     internal class WebManager
     {
-        private IWebGet webGet;
+        private IGetable webGet;
 
-        public WebManager(IWebGet getter)
+        public void SetCommunicator(IGetable getter)
         {
             webGet = getter;
         }
 
-        public string GetWebReply(string website)
+        public string GetReply(string website)
         {
-            return webGet.GetWebReply(website);
+            return webGet.GetData(website);
         }
     }
 }

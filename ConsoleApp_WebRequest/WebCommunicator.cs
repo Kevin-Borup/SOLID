@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_WebRequest
 {
-    internal class Communicator : IWebGet
+    internal class WebCommunicator : IGetable
     {
         readonly HttpClient client = new HttpClient();
 
-        public string GetWebReply(string website)
+        public string GetData(string website)
         {
             string webReply = string.Empty;
 
