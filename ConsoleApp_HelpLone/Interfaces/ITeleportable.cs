@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_HelpLone
 {
-    internal interface ICharacter
+    internal interface ITeleportable
     {
-        void Heal();
-        void Die();
-        void Fight();
+        public void Teleport(int x, int y);
     }
 }

@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_HelpLone
 {
-    internal class Wizard
+    internal class Wizard : Character, IMagicable, ITeleportable
     {
+        public void Teleport(int x, int y)
+        {
+            Console.WriteLine("I'm teleporting to " + x + " " + y);
+        }
+
+        public void ThrowFrostNova()
+        {
+            Console.WriteLine("I'm throwing my frost nova");
+        }
+
+        public void ThrowMagicMisile()
+        {
+            Console.WriteLine("I'm throwing a magic misile");
+        }
     }
 }
