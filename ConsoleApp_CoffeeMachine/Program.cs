@@ -14,15 +14,23 @@
                 coffeeMachine.InsertFilter();
                 coffeeMachine.Input(650, powder);
                 coffeeMachine.Activate();
-                Print(coffeeMachine.Output(), powder);
+                Print(coffeeMachine.Output());
                 coffeeMachine.Deactivate();
                 coffeeMachine.RemoveFilter();
             }
+
+            Powder powderForEsspresso = new Powder(50, "Coffee");
+            coffeeMachine.InsertFilter();
+            coffeeMachine.Input(650, powderForEsspresso);
+            coffeeMachine.MachineSettings(1, "Espresso");
+            coffeeMachine.Activate();
+            Print(coffeeMachine.Output());
+
         }
 
-        private static void Print(int[] output, Powder powder)
+        private static void Print(string[] output)
         {
-            Console.WriteLine($"Cups: {output[0]} of {powder.Type} - Cup Strength: {output[1]}%");
+            Console.WriteLine($"Cups: {output[0]} of {output[1]} - Cup Strength: {output[2]}%");
         }
     }
 }
