@@ -1,0 +1,15 @@
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\bin\Debug\net6.0\ConsoleApp_WebRequest.exe
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\bin\Debug\net6.0\ConsoleApp_WebRequest.deps.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\bin\Debug\net6.0\ConsoleApp_WebRequest.runtimeconfig.json
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\bin\Debug\net6.0\ConsoleApp_WebRequest.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\bin\Debug\net6.0\ConsoleApp_WebRequest.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.GeneratedMSBuildEditorConfig.editorconfig
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.AssemblyInfoInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.AssemblyInfo.cs
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\refint\ConsoleApp_WebRequest.dll
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.pdb
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ConsoleApp_WebRequest.genruntimeconfig.cache
+C:\ZBC Data-Kommunikation\H2\SOLID\ConsoleApp_WebRequest\obj\Debug\net6.0\ref\ConsoleApp_WebRequest.dll
