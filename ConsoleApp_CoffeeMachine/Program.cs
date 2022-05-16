@@ -5,27 +5,31 @@
         public static void Main(string[] args)
         {
             CoffeeMachine coffeeMachine = new CoffeeMachine();
-
-            List<Powder> powders = new List<Powder> { new Powder(50, "Coffee"), new Powder(60, "Tea") };
+            TeaMachine teaMachine = new TeaMachine();
+            EspressoMachine espressoMachine = new EspressoMachine();
 
             coffeeMachine.PowerOn();
-            foreach (Powder powder in powders)
-            {
-                coffeeMachine.InsertFilter();
-                coffeeMachine.Input(650, powder);
-                coffeeMachine.Activate();
-                Print(coffeeMachine.Output());
-                coffeeMachine.Deactivate();
-                coffeeMachine.RemoveFilter();
-            }
-
-            Powder powderForEsspresso = new Powder(50, "Coffee");
             coffeeMachine.InsertFilter();
-            coffeeMachine.Input(650, powderForEsspresso);
-            coffeeMachine.MachineSettings(1, "Espresso");
+            coffeeMachine.Input(650, 50);
             coffeeMachine.Activate();
             Print(coffeeMachine.Output());
+            coffeeMachine.Deactivate();
+            coffeeMachine.RemoveFilter();
+            coffeeMachine.PowerOff();
 
+            teaMachine.PowerOn();
+            teaMachine.Input(650, 50);
+            teaMachine.Activate();
+            Print(teaMachine.Output());
+            teaMachine.Deactivate();
+            teaMachine.PowerOff();
+
+            espressoMachine.PowerOn();
+            espressoMachine.Input(650);
+            espressoMachine.Settings(1, "Espresso");
+            espressoMachine.Activate();
+            Print(espressoMachine.Output());
+            espressoMachine.Deactivate();
         }
 
         private static void Print(string[] output)

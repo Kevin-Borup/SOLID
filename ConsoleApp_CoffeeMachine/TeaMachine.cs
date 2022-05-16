@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_CoffeeMachine
 {
-    /// <summary>
-    /// This class represents a coffeemachine
-    /// </summary>
-    internal class CoffeeMachine : Appliance
+    internal class TeaMachine : Appliance
     {
         private double waterContainer = 0;
         private double grams;
-        private bool insertedFilter = false;
 
         private int cups;
 
         private double cupMl = 200;
-        private double optimalCoffeeGrams = 16;
-
+        private double optimalTeaGrams = 12;
 
         public void Input(double waterMl, double grams)
         {
@@ -27,30 +22,18 @@ namespace ConsoleApp_CoffeeMachine
             this.grams = grams;
         }
 
-        public void InsertFilter()
-        {
-            insertedFilter = true;
-        }
-
-        public void RemoveFilter()
-        {
-            insertedFilter = false;
-        }
-
         public string[] Output()
         {
-            if (on && running && insertedFilter)
+            if (on && running)
             {
                 cups = (int)(waterContainer / cupMl);
                 double gramsPerCup = grams / cups;
 
-
-                int percentageStrength = Convert.ToInt32((optimalCoffeeGrams / gramsPerCup) * 100);
-
+                int percentageStrength = Convert.ToInt32((optimalTeaGrams / gramsPerCup) * 100);
 
                 waterContainer -= cups * cupMl;
 
-                return new string[3] { cups.ToString(), "Coffee", percentageStrength.ToString() };
+                return new string[3] { cups.ToString(), "Tea", percentageStrength.ToString() };
             }
             else
             {
